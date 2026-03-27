@@ -175,3 +175,25 @@ competences:
 langues:
   - { nom: "English", niveau: "B1", drapeau: "🇬🇧" }
   - { nom: "Allemand", niveau: "A1", drapeau: "🇩🇪" }
+
+
+
+# ==========================================
+# FORMATIONS
+# ==========================================
+formations:
+  - etablissement: Université Paris 8
+    diplome: Master Ingénierie de la Formation
+    dates: 2018 – 2020
+    details:
+      - Ingénierie pédagogique
+      - Analyse des besoins et conception de dispositifs
+      - Méthodologies d’apprentissage
+
+  - etablissement: Université Paris 8
+    diplome: Licence Sciences de l’Éducation
+    dates: 2015 – 2018
+    details:
+      - Psychologie de l’apprentissage
+      - Sociologie de l’éducation
+      - Didactique et pédagogie
