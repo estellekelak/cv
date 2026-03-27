@@ -49,7 +49,7 @@ title: {{ site.data.cv.infos.nom }} - CV
     <div class="sidebar-title">Formations</div>
     {% for f in site.data.cv.formations %}
     <div style="border: 1px solid rgba(0,0,0,0.05); padding: 12px; border-radius: 6px; margin-bottom: 12px; font-size: 0.85em;">
-      <strong style="color: #2383e2; display: block;">{{ f.diplome }}</strong>
+      <strong style="display: block;">{{ f.diplome }}</strong>
       <span style="display:block; margin-top:4px;">{{ f.etablissement }}</span>
       <span style="color: #999;">{{ f.dates }}</span>
     </div>
