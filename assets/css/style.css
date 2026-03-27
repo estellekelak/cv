@@ -40,19 +40,69 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 .block-color-gray_background { background-color: rgb(241, 241, 239); }
 .block-color-blue_background { background-color: rgb(231, 243, 248); }
 
-/* Galerie Résultats (Image 13) */
-.results-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-bottom: 30px;}
-.result-card { 
-    border: 1px solid rgba(55, 53, 47, 0.09); 
-    border-radius: 8px; 
-    height: 320px; 
-    display: flex; 
-    flex-direction: column; 
-    background: white; 
+/* Galerie Résultats */
+.results-gallery { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 16px; 
+  margin-bottom: 30px;
 }
-.result-content { padding: 15px; flex-grow: 1; font-size: 0.85em; overflow-y: auto; }
-.result-footer { padding: 10px 15px; background: #f9f9f9; border-top: 1px solid rgba(55, 53, 47, 0.06); }
-.result-footer strong { color: #2383e2; display: block; font-size: 0.9em; }
+
+/* Carte */
+.result-card { 
+  border: 1px solid rgba(55, 53, 47, 0.09); 
+  border-radius: 8px; 
+  background: white; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 14px;
+}
+
+/* Titre en haut */
+.result-footer {
+  order: -1; /* place le titre en haut */
+  margin-bottom: 10px;
+  min-height: 48px; /* hauteur stable */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none; /* enlève la barre grise */
+  border: none;
+  padding: 0;
+}
+
+/* Titre + date */
+.result-footer strong {
+  color: #37352f; /* couleur Notion, plus de bleu */
+  font-size: 0.95em;
+  margin-bottom: 2px;
+}
+
+.result-footer small {
+  color: #7a7a7a;
+  font-size: 0.8em;
+}
+
+/* Contenu */
+.result-content { 
+  padding: 0; 
+  font-size: 0.85em; 
+  flex-grow: 1; 
+}
+
+/* Enlever les puces + espacement propre */
+.result-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-content li {
+  margin-bottom: 10px; /* espace entre réalisations */
+  line-height: 1.4;
+  color: #37352f; /* couleur neutre */
+}
+
 
 /* Outils (Image 15) */
 .tools-grid { display: flex; flex-wrap: wrap; gap: 15px; background: white; border: 1px solid rgba(55, 53, 47, 0.09); border-radius: 6px; padding: 15px; }
