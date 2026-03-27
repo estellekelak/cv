@@ -20,20 +20,32 @@ title: {{ site.data.cv.infos.nom }} - CV
     </div>
     {% endfor %}
 
-    <h2>RÉSULTATS</h2>
-    <div class="results-gallery">
-      {% for res in site.data.cv.resultats %}
-      <div class="result-card">
-        <div class="result-content">
-          <ul>{% for p in res.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        </div>
-        <div class="result-footer">
-          <strong>{{ res.titre }}</strong>
-          <small>{{ res.date }}</small>
-        </div>
-      </div>
-      {% endfor %}
+<h2>RÉSULTATS</h2>
+
+<div class="results-gallery">
+  {% for res in site.data.cv.resultats %}
+  <div class="result-card">
+
+    <!-- Bandeau de titre (année + thématique) -->
+    <div class="result-footer">
+      <div class="result-year">{{ res.annee }}</div>
+      <div class="result-separator">—</div>
+      <div class="result-theme">{{ res.titre }}</div>
     </div>
+
+    <!-- Contenu des réalisations -->
+    <div class="result-content">
+      <ul>
+        {% for p in res.points %}
+        <li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
 
     </div>
 
