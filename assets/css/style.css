@@ -55,37 +55,50 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
   background: white; 
   display: flex; 
   flex-direction: column; 
-  padding: 0; /* IMPORTANT : enlève les marges internes */
-  overflow: hidden; /* pour que le bandeau colle aux bords */
+  padding: 0;
+  overflow: hidden;
 }
 
-/* Titre en haut, fond toggle Notion */
+/* Bandeau de titre */
 .result-footer {
   order: -1;
   background: rgba(55, 53, 47, 0.06);
-  padding: 10px 12px; /* espace interne du bandeau */
-  margin: 0; /* enlève toute marge */
-  min-height: 48px;
+  padding: 12px;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border-radius: 0; /* pas d'arrondi interne */
+  align-items: flex-start;
+  min-height: 80px; /* hauteur stable */
 }
 
-/* Texte du titre */
-.result-footer strong,
-.result-footer small {
-  color: #37352f; /* couleur Notion */
+/* Année */
+.result-year {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #37352f;
+}
+
+/* Tiret séparateur */
+.result-separator {
+  color: #999;
+  margin: 2px 0;
+}
+
+/* Thématique */
+.result-theme {
+  font-size: 0.9em;
+  color: #37352f;
+  line-height: 1.3;
 }
 
 /* Contenu */
 .result-content { 
-  padding: 12px; /* espace interne du contenu */
+  padding: 12px; 
   font-size: 0.85em; 
   flex-grow: 1; 
 }
 
-/* Liste sans puces + espacement propre */
+/* Liste sans puces */
 .result-content ul {
   list-style: none;
   padding: 0;

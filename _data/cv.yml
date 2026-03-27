@@ -108,8 +108,8 @@ experiences:
 # RÉSULTATS MARQUANTS
 # ==========================================
 resultats:
-  - titre: "2025 – Impact & responsabilité sociétale"
-    couleur: "teal"
+  - annee: "2025"
+    titre: "Impact & responsabilité sociétale"
     points:
       - "Construction de la mesure d’impact social avec Antropia ESSEC : indicateurs, chaîne d’impact, reporting"
       - "Pilotage du bilan carbone et structuration de la démarche RSO"
