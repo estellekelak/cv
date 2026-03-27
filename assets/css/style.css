@@ -60,16 +60,18 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 
 /* Titre en haut */
 .result-footer {
-  order: -1; /* place le titre en haut */
-  margin-bottom: 10px;
+  order: -1; /* titre en haut */
+  margin-bottom: 12px;
   min-height: 48px; /* hauteur stable */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: none; /* enlève la barre grise */
-  border: none;
-  padding: 0;
+
+  background: rgba(55, 53, 47, 0.06); /* fond façon toggle Notion */
+  border-radius: 6px;
+  padding: 8px 12px;
 }
+
 
 /* Titre + date */
 .result-footer strong {
