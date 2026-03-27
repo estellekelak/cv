@@ -55,44 +55,37 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
   background: white; 
   display: flex; 
   flex-direction: column; 
-  padding: 14px;
+  padding: 0; /* IMPORTANT : enlève les marges internes */
+  overflow: hidden; /* pour que le bandeau colle aux bords */
 }
 
-/* Titre en haut */
+/* Titre en haut, fond toggle Notion */
 .result-footer {
-  order: -1; /* titre en haut */
-  margin-bottom: 12px;
-  min-height: 48px; /* hauteur stable */
+  order: -1;
+  background: rgba(55, 53, 47, 0.06);
+  padding: 10px 12px; /* espace interne du bandeau */
+  margin: 0; /* enlève toute marge */
+  min-height: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  background: rgba(55, 53, 47, 0.06); /* fond façon toggle Notion */
-  border-radius: 6px;
-  padding: 8px 12px;
+  border-radius: 0; /* pas d'arrondi interne */
 }
 
-
-/* Titre + date */
-.result-footer strong {
-  color: #37352f; /* couleur Notion, plus de bleu */
-  font-size: 0.95em;
-  margin-bottom: 2px;
-}
-
+/* Texte du titre */
+.result-footer strong,
 .result-footer small {
-  color: #7a7a7a;
-  font-size: 0.8em;
+  color: #37352f; /* couleur Notion */
 }
 
 /* Contenu */
 .result-content { 
-  padding: 0; 
+  padding: 12px; /* espace interne du contenu */
   font-size: 0.85em; 
   flex-grow: 1; 
 }
 
-/* Enlever les puces + espacement propre */
+/* Liste sans puces + espacement propre */
 .result-content ul {
   list-style: none;
   padding: 0;
@@ -100,10 +93,11 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 }
 
 .result-content li {
-  margin-bottom: 10px; /* espace entre réalisations */
+  margin-bottom: 10px;
   line-height: 1.4;
-  color: #37352f; /* couleur neutre */
+  color: #37352f;
 }
+
 
 
 /* Outils (Image 15) */
