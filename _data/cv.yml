@@ -1,0 +1,177 @@
+# ==========================================
+# INFOS GÉNÉRALES
+# ==========================================
+infos:
+  nom: "Estelle TAKAOKA"
+  photo: "assets/images/Copilot_20260326_053622.png"
+  location: "🌍 Conflans-Sainte-Honorine, France"
+  poste_actuel: "Formatrice consultante"
+  bio: >
+    Je travaille depuis plusieurs années à la croisée de la pédagogie, des financements, du mécénat, de la communication et du numérique. Ce parcours hybride m’a appris à naviguer entre des logiques très différentes, à comprendre les besoins de chaque acteur et à construire des projets qui tiennent dans la durée.
+    Quand j’arrive dans une organisation, je commence par observer : les dynamiques internes, les contraintes, les zones de friction, les ressources disponibles. Petit à petit, je clarifie, je structure, je relie. J’apporte des méthodes, des outils et une vision d’ensemble qui permettent aux équipes d’avancer plus sereinement et aux projets de gagner en cohérence.
+  contact:
+    email: "ton-email@exemple.com"
+    linkedin: "linkedin.com/in/estelle-takaoka"
+    telephone: "+33 6 XX XX XX XX"
+
+# ==========================================
+# EXPÉRIENCES PROFESSIONNELLES
+# ==========================================
+experiences:
+  - entreprise: "FERME D'ECANCOURT"
+    poste: "Chargée de mission subvention et mécénats"
+    dates: "Sept 2022 – Aujourd’hui"
+    couleur: "gray"
+    resume: "Pilotage transversal d’une structure associative d’éducation à l’environnement, avec responsabilités sur 8 domaines clés : financements publics & privés, mécénat, communication, événementiel, numérique, impact social, coordination interne et RH."
+    missions:
+      - "Financements publics & privés"
+      - "Mécénat & partenariats"
+      - "Gestion de projets & coordination"
+      - "Communication"
+      - "Numérique & informatique"
+      - "Impact social & RSO"
+      - "RH & organisation : recrutement, fiches de poste, intégration, formation interne, gestion des accès, optimisation des outils collaboratifs"
+
+  - entreprise: "AFPA"
+    poste: "Formatrice"
+    dates: "2020 – 2021"
+    couleur: "gray"
+    resume: "Conception et animation de modules de formation en comptabilité, gestion, tiers‑lieux et bureautique. Adaptation pédagogique, accompagnement des apprenants et création de supports structurés."
+    missions:
+      - "Intervention sur la formation au titre Gestionnaire Comptable et Fiscal (6 mois)"
+      - "Formation Gestionnaire de Tiers Lieux (1 semaine)"
+      - "Formation Informatique et Bureautique (6 semaines)"
+
+  - entreprise: "COUNT ACT"
+    poste: "Formatrice Consultante indépendante"
+    dates: "2019 – 2020"
+    couleur: "gray"
+    resume: "Conception et animation de modules de formation en comptabilité, gestion pour un public de type Master."
+    missions:
+      - "Ingénierie de formation Groupe IGS"
+      - "Ingénierie pédagogique"
+      - "Animation de formation Manager de Business Unit"
+
+  - entreprise: "SNCF & BGE Parif"
+    poste: "Stagiaire de la formation professionnelle"
+    dates: "2018 – 2019"
+    couleur: "gray"
+    resume: "Réalisation de 2 stages d’une durée totale de 12 semaines dans le cadre d’une formation diplômante."
+    missions:
+      - "Analyse des besoins du commanditaire"
+      - "Scénarii pédagogiques"
+      - "Supports et catalogues"
+      - "Gamification des parcours pédagogiques"
+      - "Animation de formation"
+
+  - entreprise: "COPLO INGENIERIE"
+    poste: "Directrice adjointe"
+    dates: "2017 – 2018"
+    couleur: "gray"
+    resume: "Reprise des responsabilités opérationnelles et stratégiques dans un contexte de transition imprévue."
+    missions:
+      - "Évaluation financière de cession d’actifs"
+      - "Vente du fonds de commerce"
+      - "Développement clientèle et suivi des dossiers"
+
+  - entreprise: "COPLO INGENIERIE"
+    poste: "Directrice administrative et financière"
+    dates: "2014 - 2017"
+    couleur: "gray"
+    resume: "Développement et gestion d’une TPE spécialisée dans les bâtiments industriels et sinistres structurels."
+    missions:
+      - "Comptabilité – Gestion – Finance"
+      - "Stratégie financière et développement des affaires"
+      - "Montage des dossiers de financement clients"
+
+  - entreprise: "CO.T.R.EX"
+    poste: "Responsable financements, gestion et comptabilité"
+    dates: "2006 – 2013"
+    couleur: "gray"
+    resume: "Structuration dans une TPE spécialisée en maîtrise d’œuvre en bâtiment des processus de comptabilité, gestion et systèmes d’information."
+    missions:
+      - "Comptabilité – Gestion – Finance"
+      - "Management des équipes BTP (planning, réunions…)"
+      - "Coordination financière des projets BTP"
+
+  - entreprise: "CABINETS D’EXPERTISE COMPTABLE | GROUPE MAGAZINE EXPRESS EXPANSION"
+    poste: "Comptable"
+    dates: "2000 – 2006"
+    couleur: "gray"
+    resume: "Structuration des processus de comptabilité, gestion et systèmes d’information."
+    missions:
+      - "Comptabilité générale BNC, SCI, SARL, SA"
+      - "Révision des comptes annuels"
+      - "Analyse de bilans"
+
+# ==========================================
+# RÉSULTATS MARQUANTS
+# ==========================================
+resultats:
+  - titre: "2025 – Impact & responsabilité sociétale"
+    couleur: "teal"
+    points:
+      - "Construction de la mesure d’impact social avec Antropia ESSEC : indicateurs, chaîne d’impact, reporting"
+      - "Pilotage du bilan carbone et structuration de la démarche RSO"
+  
+  - titre: "2024 – Pilotage financier & mécénat"
+    couleur: "teal"
+    points:
+      - "Sécurisation de **150 k€** de financements (Région, Département, CAF, SDJES, FONJEP, AR, QPV…)"
+      - "Consolidation de la stratégie financière et amélioration de la fiabilité des dossiers"
+      - "Obtention d’une subvention exceptionnelle de **90 k€** auprès de la CACP"
+
+  - titre: "2023 – Transformation numérique & optimisation"
+    couleur: "teal"
+    points:
+      - "Déploiement d’un environnement numérique complet (Office 365, SharePoint, AzureAD, PowerShell, Grist, Notion, Obsidian, Airtable, IA)"
+      - "Optimisation des processus internes : documentation, automatisations"
+
+  - titre: "2017 – 2026 Accompagnement entrepreneurial"
+    couleur: "blue"
+    points:
+      - "Plus de **10 entrepreneurs** accompagnés dans la structuration et stratégie"
+      - "Évaluations financières, préparation et accompagnement à l’achat/vente de fonds de commerce"
+
+# ==========================================
+# OUTILS (PAR CATÉGORIES)
+# ==========================================
+categories_outils:
+  - nom: "Bureautique"
+    outils:
+      - { nom: "Word", icone: "assets/images/icons/word.png" }
+      - { nom: "Excel", icone: "assets/images/icons/excel.png" }
+      - { nom: "PowerPoint", icone: "assets/images/icons/ppt.png" }
+      - { nom: "Office365", icone: "assets/images/icons/365.png" }
+      - { nom: "Gsuite", icone: "assets/images/icons/gsuite.png" }
+
+  
+  - nom: "Design & Web"
+    outils:
+      - { nom: "InDesign", icone: "assets/images/icons/indesign.png" }
+      - { nom: "Photoshop", icone: "assets/images/icons/photoshop.png" }
+      - { nom: "WordPress", icone: "assets/images/icons/wordpress.png" }
+      - { nom: "CSS", icone: "assets/images/icons/css.png" }
+      - { nom: "Canva", icone: "assets/images/icons/canva.png" }
+
+  - nom: "Collaboration"
+    outils:
+      - { nom: "Obsidian", icone: "assets/images/icons/obsidian.png" }
+      - { nom: "Notion", icone: "assets/images/icons/notion.png" }
+      - { nom: "Jira", icone: "assets/images/icons/jira.png" }
+      - { nom: "Teams", icone: "assets/images/icons/teams.png" }
+      - { nom: "Clickup", icone: "assets/images/icons/clickup.png" }
+
+# ==========================================
+# COMPÉTENCES 
+# ==========================================
+competences:
+  hard: ["Financements", "Pilotage multi acteurs", "Gestion de projet", "Outils collaboratifs", "Informatique", "Communication", "Analyse d'impact", "Ingénierie pédagogique"]
+  soft: ["Facilitation", "Coopération", "Créativité", "Résolution de problèmes", "Polyvalence", "Esprit d’analyse", "Rigueur"]
+
+# ==========================================
+# LANGUES
+# ==========================================
+langues:
+  - { nom: "English", niveau: "B1", drapeau: "🇬🇧" }
+  - { nom: "Allemand", niveau: "A1", drapeau: "🇩🇪" }

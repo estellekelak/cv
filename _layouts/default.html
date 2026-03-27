@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="page-body">
+        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px;">
+            <div style="flex: 0 0 175px;">
+                <img src="{{ site.data.cv.infos.photo | relative_url }}" class="profile-pic">
+                <div style="font-size: 0.85em; margin-top: 15px;"> {{ site.data.cv.infos.location }}</div>
+            </div>
+            <div style="flex: 1; padding-top: 10px;">
+                <h1>{{ site.data.cv.infos.nom }}</h1>
+                <p style="font-size: 1.1em; margin-top: 15px; line-height: 1.6;">{{ site.data.cv.infos.bio }}</p>
+            </div>
+        </div>
+        {{ content }}
+    </div>
+</body>
+</html>

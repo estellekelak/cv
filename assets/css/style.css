@@ -1,0 +1,66 @@
+/* cspell:disable-file */
+html { 
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact; 
+}
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 40px 60px;
+    width: 100%;
+    color: rgb(55, 53, 47);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Titres Harmonisés (Image 13) */
+h2, .sidebar-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.8rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    padding-bottom: 8px;
+    color: rgb(55, 53, 47);
+}
+
+h1 { font-size: 2.8rem; font-weight: 700; margin: 0; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 0; }
+h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 15px 0 8px 0; }
+
+/* Layout */
+.main-container { display: flex; gap: 60px; margin-top: 30px; align-items: flex-start; }
+.content-left { flex: 2.8; }
+.sidebar-right { flex: 1; min-width: 280px; }
+
+/* Callouts Expériences */
+.callout { border-radius: 4px; padding: 18px; margin-bottom: 15px; width: 100%; }
+.block-color-gray_background { background-color: rgb(241, 241, 239); }
+.block-color-blue_background { background-color: rgb(231, 243, 248); }
+
+/* Galerie Résultats (Image 13) */
+.results-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-bottom: 30px;}
+.result-card { 
+    border: 1px solid rgba(55, 53, 47, 0.09); 
+    border-radius: 8px; 
+    height: 320px; 
+    display: flex; 
+    flex-direction: column; 
+    background: white; 
+}
+.result-content { padding: 15px; flex-grow: 1; font-size: 0.85em; overflow-y: auto; }
+.result-footer { padding: 10px 15px; background: #f9f9f9; border-top: 1px solid rgba(55, 53, 47, 0.06); }
+.result-footer strong { color: #2383e2; display: block; font-size: 0.9em; }
+
+/* Outils (Image 15) */
+.tools-grid { display: flex; flex-wrap: wrap; gap: 15px; background: white; border: 1px solid rgba(55, 53, 47, 0.09); border-radius: 6px; padding: 15px; }
+.tool-icon { height: 42px; width: auto; object-fit: contain; }
+
+/* Badges Compétences */
+code { background: rgba(135, 131, 120, 0.15); border-radius: 3px; padding: 3px 8px; font-size: 0.85em; color: #eb5757; margin: 3px; display: inline-block; font-family: inherit;}
+.soft-badge { background: #eef2ff !important; color: #35469C !important; }
+
+/* Photo */
+.profile-pic { width: 175px; height: 175px; border-radius: 50%; object-fit: cover; }
