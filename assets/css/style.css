@@ -98,11 +98,11 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
     color: #999;
 }
 
-/* Drapeaux : police emoji fiable */
+/* Drapeaux : police emoji fiable (Vivaldi + Windows) */
 .flag {
-    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
-                 "Twemoji Mozilla", sans-serif;
-    font-size: 1em;
+    font-family: "Twemoji Mozilla", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji" !important;
+    font-size: 1.1em;
+    display: inline-block;
     margin-right: 4px;
 }
 
@@ -250,7 +250,7 @@ details[open] {
    RESPONSIVE
    ========================================== */
 
-/* --- Tablettes / petits laptops : on passe en colonne --- */
+/* --- Tablettes / Vivaldi mobile (viewport large) --- */
 @media (max-width: 1024px) {
     body {
         padding: 20px;
@@ -262,8 +262,13 @@ details[open] {
     }
 
     .sidebar-right {
-        width: 100%;
-        min-width: unset;
+        width: 100% !important;
+        min-width: unset !important;
+        order: 2;
+    }
+
+    .content-left {
+        order: 3;
     }
 
     .cv-header {
@@ -272,21 +277,11 @@ details[open] {
     }
 }
 
-/* --- Mobile : sidebar entre bio et expériences --- */
+/* --- Mobile strict --- */
 @media (max-width: 700px) {
 
     .cv-header {
         margin-bottom: 20px;
-    }
-
-    .sidebar-right {
-        order: 2; /* sidebar juste après la bio */
-        width: 100%;
-        min-width: unset;
-    }
-
-    .content-left {
-        order: 3; /* expériences après la sidebar */
     }
 
     .results-gallery {
