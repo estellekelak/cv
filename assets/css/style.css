@@ -137,33 +137,34 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
    CALLOUTS & TOGGLES
    ========================================== */
 
-/* --- TOGGLES TRANSPARENTS (CV) --- */
-/* Tous les <details> du CV deviennent transparents par défaut */
+/* ==========================================
+   TOGGLES TRANSPARENTS (CV)
+   ========================================== */
+
+/* On retire le style callout que tu avais avant */
 details {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 12px 0 !important;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 12px 0;
 }
 
-/* Titre du toggle */
+/* On garde le style natif du toggle */
 details summary {
     cursor: pointer;
     font-weight: 600;
-    list-style: none;
     padding: 6px 0;
-    color: rgb(55, 53, 47);
+    list-style: none; /* évite les puces */
 }
 
-/* Hover léger */
+/* Légère indication au survol */
 details summary:hover {
     opacity: 0.7;
 }
 
-/* Contenu du toggle */
+/* Contenu interne */
 details > *:not(summary) {
     margin-top: 10px;
-    padding-left: 0;
 }
 
 /* --- OPTIONNEL : TOGGLE AVEC FOND (si tu veux l’utiliser ailleurs) --- */
