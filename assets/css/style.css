@@ -62,7 +62,7 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 }
 
 /* ==========================================
-   LAYOUT DESKTOP
+   LAYOUT DESKTOP (ordre correct)
    ========================================== */
 
 .main-container {
@@ -73,13 +73,13 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 
 .content-left {
     flex: 2.8;
-    order: 2;
+    order: 1; /* contenu à gauche */
 }
 
 .sidebar-right {
     flex: 1;
     min-width: 280px;
-    order: 3;
+    order: 2; /* sidebar à droite */
 }
 
 /* ==========================================
@@ -265,11 +265,13 @@ details[open] {
     }
 
     .sidebar-right {
-        order: 2; /* Sidebar juste après la bio */
+        order: 2; /* sidebar juste après la bio */
+        width: 100%;
+        min-width: unset;
     }
 
     .content-left {
-        order: 3; /* Expériences après la sidebar */
+        order: 3; /* expériences après la sidebar */
     }
 
     .results-gallery {
