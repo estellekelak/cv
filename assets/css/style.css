@@ -134,10 +134,6 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 }
 
 /* ==========================================
-   CALLOUTS & TOGGLES
-   ========================================== */
-
-/* ==========================================
    TOGGLES TRANSPARENTS (CV)
    ========================================== */
 
@@ -146,7 +142,7 @@ details {
     background: transparent;
     border: none;
     padding: 0;
-    margin: 12px 0;
+    margin: 0; /* important pour coller au bloc d'expérience */
 }
 
 /* On garde le style natif du toggle */
@@ -189,6 +185,7 @@ details > *:not(summary) {
 .toggle-filled > *:not(summary) {
     margin-top: 10px;
 }
+
 
 /* ==========================================
    RÉSULTATS (CARTES)
