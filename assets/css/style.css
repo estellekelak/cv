@@ -166,6 +166,27 @@ details summary {
     padding: 6px 0; /* léger padding pour respirer */
 }
 
+/* Flèche Notion-like */
+details summary {
+    position: relative;
+    padding-left: 18px; /* espace pour la flèche */
+}
+
+details summary::before {
+    content: "▸"; /* petite flèche triangulaire */
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 0.9em;
+    transition: transform 0.2s ease;
+    color: rgb(55, 53, 47);
+}
+
+details[open] summary::before {
+    transform: rotate(90deg); /* flèche vers le bas */
+}
+
+
 /* Hover léger */
 details summary:hover {
     opacity: 0.7;
