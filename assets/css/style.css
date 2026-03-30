@@ -147,21 +147,33 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 .block-color-gray_background { background-color: rgb(241, 241, 239); }
 .block-color-blue_background { background-color: rgb(231, 243, 248); }
 
+/* ==========================================
+   TOGGLES TRANSPARENTS (CV)
+   ========================================== */
+
+/* Le toggle doit être transparent et sans cadre */
 details {
-    background: rgb(247, 246, 243);
-    border-radius: 6px;
-    padding: 12px 16px;
-    margin-top: 12px;
-    border: 1px solid rgba(55, 53, 47, 0.1);
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0; /* important pour coller au bloc d'expérience */
 }
 
+/* On garde le style natif du toggle */
 details summary {
     cursor: pointer;
     font-weight: 600;
+    padding: 6px 0; /* léger padding pour respirer */
 }
 
-details[open] {
-    background: rgb(242, 241, 238);
+/* Hover léger */
+details summary:hover {
+    opacity: 0.7;
+}
+
+/* Contenu interne */
+details > *:not(summary) {
+    margin-top: 10px;
 }
 
 
