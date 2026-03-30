@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="cv-header">
+    <img src="{{ site.data.cv.infos.photo | relative_url }}" class="profile-pic">
+    <div class="cv-header-text">
+        <h1>{{ site.data.cv.infos.nom }}</h1>
+        <p class="cv-bio">{{ site.data.cv.infos.bio }}</p>
+    </div>
+</div>
+
+<div class="main-container">
+
+    <!-- Sidebar (mobile : order 2) -->
+    <aside class="sidebar-right">
+        {% include sidebar.html %}
+    </aside>
+
+    <!-- Contenu principal (mobile : order 3) -->
+    <div class="content-left">
+        {{ content }}
+    </div>
+
+</div>

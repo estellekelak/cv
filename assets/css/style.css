@@ -1,8 +1,12 @@
-/* cspell:disable-file */
-html { 
-    -webkit-print-color-adjust: exact; 
-    print-color-adjust: exact; 
+/* ==========================================
+   BASE & TYPOGRAPHIE
+   ========================================== */
+
+html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
+
 * { box-sizing: border-box; }
 
 body {
@@ -11,10 +15,12 @@ body {
     width: 100%;
     color: rgb(55, 53, 47);
     font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
+    background: white;
 }
 
-/* Titres Harmonisés (Image 13) */
+/* Titres */
+h1 { font-size: 2.8rem; font-weight: 700; margin: 0; }
 h2, .sidebar-title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -23,103 +29,250 @@ h2, .sidebar-title {
     letter-spacing: 0.05em;
     border-bottom: 1px solid rgba(55, 53, 47, 0.09);
     padding-bottom: 8px;
-    color: rgb(55, 53, 47);
 }
-
-h1 { font-size: 2.8rem; font-weight: 700; margin: 0; }
 h3 { font-size: 1.1rem; font-weight: 600; margin: 0; }
 h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 15px 0 8px 0; }
 
-/* Layout */
-.main-container { display: flex; gap: 60px; margin-top: 30px; align-items: flex-start; }
-.content-left { flex: 2.8; }
-.sidebar-right { flex: 1; min-width: 280px; }
+/* ==========================================
+   CV HEADER
+   ========================================== */
 
-/* Callouts Expériences */
-.callout { border-radius: 4px; padding: 18px; margin-bottom: 15px; width: 100%; }
+.cv-header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cv-header-text {
+    flex: 1;
+}
+
+.cv-bio {
+    font-size: 1.1em;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   LAYOUT DESKTOP
+   ========================================== */
+
+.main-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.content-left {
+    flex: 2.8;
+    order: 2;
+}
+
+.sidebar-right {
+    flex: 1;
+    min-width: 280px;
+    order: 3;
+}
+
+/* ==========================================
+   SIDEBAR
+   ========================================== */
+
+.sidebar-card {
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 0.85em;
+}
+
+.sidebar-dates {
+    color: #999;
+}
+
+.skills code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-size: 0.85em;
+    color: #eb5757;
+    margin: 3px;
+    display: inline-block;
+    font-family: inherit;
+}
+
+.soft-badge {
+    background: #eef2ff !important;
+    color: #35469C !important;
+}
+
+/* ==========================================
+   CALLOUTS & TOGGLES
+   ========================================== */
+
+.callout {
+    border-radius: 4px;
+    padding: 18px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 .block-color-gray_background { background-color: rgb(241, 241, 239); }
 .block-color-blue_background { background-color: rgb(231, 243, 248); }
 
-/* Galerie Résultats */
-.results-gallery { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-  gap: 16px; 
-  margin-bottom: 30px;
+details {
+    background: rgb(247, 246, 243);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    border: 1px solid rgba(55, 53, 47, 0.1);
 }
 
-/* Carte */
-.result-card { 
-  border: 1px solid rgba(55, 53, 47, 0.09); 
-  border-radius: 8px; 
-  background: white; 
-  display: flex; 
-  flex-direction: column; 
-  padding: 0;
-  overflow: hidden;
+details summary {
+    cursor: pointer;
+    font-weight: 600;
 }
 
-/* Bandeau de titre */
+details[open] {
+    background: rgb(242, 241, 238);
+}
+
+/* ==========================================
+   RÉSULTATS (CARTES)
+   ========================================== */
+
+.results-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.result-card {
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
 .result-footer {
-  order: -1;
-  background: rgba(55, 53, 47, 0.06);
-  padding: 12px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 80px; /* hauteur stable */
+    order: -1;
+    background: rgba(55, 53, 47, 0.06);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 80px;
 }
 
-/* Année */
 .result-year {
-  font-weight: 600;
-  font-size: 0.95em;
-  color: #37352f;
+    font-weight: 600;
+    font-size: 0.95em;
+    color: #37352f;
 }
 
-/* Tiret séparateur */
 .result-separator {
-  color: #999;
-  margin: 2px 0;
+    color: #999;
+    margin: 2px 0;
 }
 
-/* Thématique */
 .result-theme {
-  font-size: 0.9em;
-  color: #37352f;
-  line-height: 1.3;
+    font-size: 0.9em;
+    color: #37352f;
+    line-height: 1.3;
 }
 
-/* Contenu */
-.result-content { 
-  padding: 12px; 
-  font-size: 0.85em; 
-  flex-grow: 1; 
+.result-content {
+    padding: 12px;
+    font-size: 0.85em;
+    flex-grow: 1;
 }
 
-/* Liste sans puces */
 .result-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .result-content li {
-  margin-bottom: 10px;
-  line-height: 1.4;
-  color: #37352f;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #37352f;
 }
 
+/* ==========================================
+   OUTILS
+   ========================================== */
 
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: white;
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-radius: 6px;
+    padding: 15px;
+}
 
-/* Outils (Image 15) */
-.tools-grid { display: flex; flex-wrap: wrap; gap: 15px; background: white; border: 1px solid rgba(55, 53, 47, 0.09); border-radius: 6px; padding: 15px; }
-.tool-icon { height: 42px; width: auto; object-fit: contain; }
+.tool-icon {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+}
 
-/* Badges Compétences */
-code { background: rgba(135, 131, 120, 0.15); border-radius: 3px; padding: 3px 8px; font-size: 0.85em; color: #eb5757; margin: 3px; display: inline-block; font-family: inherit;}
-.soft-badge { background: #eef2ff !important; color: #35469C !important; }
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
 
-/* Photo */
-.profile-pic { width: 175px; height: 175px; border-radius: 50%; object-fit: cover; }
+/* --- Tablettes --- */
+@media (max-width: 900px) {
+    body {
+        padding: 20px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sidebar-right {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* --- Mobile : sidebar entre bio et expériences --- */
+@media (max-width: 700px) {
+
+    .cv-header {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-right {
+        order: 2; /* Sidebar juste après la bio */
+    }
+
+    .content-left {
+        order: 3; /* Expériences après la sidebar */
+    }
+
+    .results-gallery {
+        grid-template-columns: 1fr;
+    }
+}
