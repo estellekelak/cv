@@ -1,41 +1,47 @@
-<div class="sidebar-title">Contact</div>
-<p>✉️ <a href="mailto:{{ site.data.cv.infos.contact.email }}">{{ site.data.cv.infos.contact.email }}</a></p>
-<p>📞 {{ site.data.cv.infos.contact.telephone }}</p>
-<p>🔗 <a href="https://{{ site.data.cv.infos.contact.linkedin }}">LinkedIn</a></p>
+<div class="sidebar-top">
+  <div class="sidebar-title">Contact</div>
+  <p>✉️ <a href="mailto:{{ site.data.cv.infos.contact.email }}">{{ site.data.cv.infos.contact.email }}</a></p>
+  <p>📞 {{ site.data.cv.infos.contact.telephone }}</p>
+  <p>🔗 <a href="https://{{ site.data.cv.infos.contact.linkedin }}">LinkedIn</a></p>
 
-<div class="sidebar-title">Formations</div>
-{% for f in site.data.cv.formations %}
-<div class="sidebar-card">
-  <strong>{{ f.diplome }}</strong>
-  <span>{{ f.etablissement }}</span>
-  <span class="sidebar-dates">{{ f.dates }}</span>
-</div>
-{% endfor %}
-
-<div class="sidebar-title">Compétences</div>
-<div class="skills">
-  {% for skill in site.data.cv.competences.hard %}
-    <code>{{ skill }}</code>
+  <div class="sidebar-title">Formations</div>
+  {% for f in site.data.cv.formations %}
+  <div class="sidebar-card">
+    <strong>{{ f.diplome }}</strong>
+    <span>{{ f.etablissement }}</span>
+    <span class="sidebar-dates">{{ f.dates }}</span>
+  </div>
   {% endfor %}
-  <div class="soft-skills">
-    {% for soft in site.data.cv.competences.soft %}
-      <code class="soft-badge">{{ soft }}</code>
+
+  <div class="sidebar-title">Compétences</div>
+  <div class="skills">
+    {% for skill in site.data.cv.competences.hard %}
+      <code>{{ skill }}</code>
     {% endfor %}
+    <div class="soft-skills">
+      {% for soft in site.data.cv.competences.soft %}
+        <code class="soft-badge">{{ soft }}</code>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
-<div class="sidebar-title">Langues</div>
-{% for langue in site.data.cv.langues %}
-<p><span class="flag">{{ langue.drapeau }}</span> <strong>{{ langue.nom }}</strong> : {{ langue.niveau }}</p>
-{% endfor %}
+<div class="sidebar-bottom">
+  <div class="sidebar-title">Langues</div>
+  {% for langue in site.data.cv.langues %}
+  <p>
+    <img src="{{ langue.icone | relative_url }}" class="flag-icon" alt="{{ langue.nom }}">
+    <strong>{{ langue.nom }}</strong> : {{ langue.niveau }}
+  </p>
+  {% endfor %}
 
-
-<div class="sidebar-title">Outils</div>
-{% for cat in site.data.cv.categories_outils %}
-<p class="tool-cat">{{ cat.nom }}</p>
-<div class="tools-grid">
-  {% for outil in cat.outils %}
-    <img src="{{ outil.icone | relative_url }}" class="tool-icon" title="{{ outil.nom }}">
+  <div class="sidebar-title">Outils</div>
+  {% for cat in site.data.cv.categories_outils %}
+  <p class="tool-cat">{{ cat.nom }}</p>
+  <div class="tools-grid">
+    {% for outil in cat.outils %}
+      <img src="{{ outil.icone | relative_url }}" class="tool-icon" title="{{ outil.nom }}">
+    {% endfor %}
+  </div>
   {% endfor %}
 </div>
-{% endfor %}

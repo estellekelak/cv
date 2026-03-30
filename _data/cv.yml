@@ -173,8 +173,8 @@ competences:
 # LANGUES
 # ==========================================
 langues:
-  - { nom: "English", niveau: "B1", drapeau: "🇬🇧" }
-  - { nom: "Allemand", niveau: "A1", drapeau: "🇩🇪" }
+  - { nom: "English", niveau: "B1", drapeau: "🇬🇧", icone: "assets/images/icons/flag-gb.png" }
+  - { nom: "Allemand", niveau: "A1", drapeau: "🇩🇪", icone: "assets/images/icons/flag-de.png" }
 
 
 

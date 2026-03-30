@@ -62,7 +62,7 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 }
 
 /* ==========================================
-   LAYOUT DESKTOP (ordre correct)
+   LAYOUT DESKTOP
    ========================================== */
 
 .main-container {
@@ -80,6 +80,9 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
     flex: 1;
     min-width: 280px;
     order: 2; /* sidebar à droite */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 /* ==========================================
@@ -98,12 +101,12 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
     color: #999;
 }
 
-/* Drapeaux : police emoji fiable (Vivaldi + Windows) */
-.flag {
-    font-family: "Twemoji Mozilla", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji" !important;
-    font-size: 1.1em;
-    display: inline-block;
-    margin-right: 4px;
+/* Icônes de langues (images) */
+.flag-icon {
+    height: 18px;
+    width: auto;
+    margin-right: 6px;
+    vertical-align: -2px;
 }
 
 /* ==========================================
@@ -250,7 +253,7 @@ details[open] {
    RESPONSIVE
    ========================================== */
 
-/* --- Tablettes / Vivaldi mobile (viewport large) --- */
+/* Tablettes / Vivaldi mobile (viewport large) */
 @media (max-width: 1024px) {
     body {
         padding: 20px;
@@ -262,13 +265,8 @@ details[open] {
     }
 
     .sidebar-right {
-        width: 100% !important;
-        min-width: unset !important;
-        order: 2;
-    }
-
-    .content-left {
-        order: 3;
+        width: 100%;
+        min-width: unset;
     }
 
     .cv-header {
@@ -277,14 +275,34 @@ details[open] {
     }
 }
 
-/* --- Mobile strict --- */
+/* Mobile : sidebar-top en haut, sidebar-bottom en bas */
 @media (max-width: 700px) {
 
     .cv-header {
         margin-bottom: 20px;
     }
 
+    .sidebar-right {
+        order: 2;
+    }
+
+    .content-left {
+        order: 3;
+    }
+
     .results-gallery {
         grid-template-columns: 1fr;
+    }
+
+    /* Sur mobile : on veut visuellement */
+    /* - sidebar-top entre bio et expériences */
+    /* - sidebar-bottom après les expériences */
+
+    .sidebar-top {
+        margin-bottom: 24px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 32px;
     }
 }
