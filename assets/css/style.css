@@ -98,12 +98,12 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
     color: #999;
 }
 
-/* Police emoji fiable pour les drapeaux */
-.sidebar-right p,
-.langues p {
-    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                 "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
-                 sans-serif;
+/* Drapeaux : police emoji fiable */
+.flag {
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
+                 "Twemoji Mozilla", sans-serif;
+    font-size: 1em;
+    margin-right: 4px;
 }
 
 /* ==========================================
@@ -250,8 +250,8 @@ details[open] {
    RESPONSIVE
    ========================================== */
 
-/* --- Tablettes --- */
-@media (max-width: 900px) {
+/* --- Tablettes / petits laptops : on passe en colonne --- */
+@media (max-width: 1024px) {
     body {
         padding: 20px;
     }

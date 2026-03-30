@@ -26,8 +26,9 @@
 
 <div class="sidebar-title">Langues</div>
 {% for langue in site.data.cv.langues %}
-<p>{{ langue.drapeau }} <strong>{{ langue.nom }}</strong> : {{ langue.niveau }}</p>
+<p><span class="flag">{{ langue.drapeau }}</span> <strong>{{ langue.nom }}</strong> : {{ langue.niveau }}</p>
 {% endfor %}
+
 
 <div class="sidebar-title">Outils</div>
 {% for cat in site.data.cv.categories_outils %}
