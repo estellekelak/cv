@@ -134,56 +134,34 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 }
 
 /* ==========================================
-   TOGGLES TRANSPARENTS (CV)
+   CALLOUTS & TOGGLES
    ========================================== */
 
-/* On retire le style callout que tu avais avant */
+.callout {
+    border-radius: 4px;
+    padding: 18px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.block-color-gray_background { background-color: rgb(241, 241, 239); }
+.block-color-blue_background { background-color: rgb(231, 243, 248); }
+
 details {
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin: 0; /* important pour coller au bloc d'expérience */
-}
-
-/* On garde le style natif du toggle */
-details summary {
-    cursor: pointer;
-    font-weight: 600;
-    padding: 6px 0;
-    list-style: none; /* évite les puces */
-}
-
-/* Légère indication au survol */
-details summary:hover {
-    opacity: 0.7;
-}
-
-/* Contenu interne */
-details > *:not(summary) {
-    margin-top: 10px;
-}
-
-/* --- OPTIONNEL : TOGGLE AVEC FOND (si tu veux l’utiliser ailleurs) --- */
-.toggle-filled {
     background: rgb(247, 246, 243);
     border-radius: 6px;
     padding: 12px 16px;
-    margin: 12px 0;
+    margin-top: 12px;
     border: 1px solid rgba(55, 53, 47, 0.1);
 }
 
-.toggle-filled summary {
+details summary {
     cursor: pointer;
     font-weight: 600;
-    list-style: none;
 }
 
-.toggle-filled[open] {
+details[open] {
     background: rgb(242, 241, 238);
-}
-
-.toggle-filled > *:not(summary) {
-    margin-top: 10px;
 }
 
 
