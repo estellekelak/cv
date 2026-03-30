@@ -17,6 +17,7 @@ body {
     font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     background: white;
+    font-size: 1rem;
 }
 
 /* Titres */
@@ -73,13 +74,13 @@ h4 { font-size: 0.9rem; font-weight: 500; color: rgba(55, 53, 47, 0.6); margin: 
 
 .content-left {
     flex: 2.8;
-    order: 1; /* contenu à gauche */
+    order: 1;
 }
 
 .sidebar-right {
     flex: 1;
     min-width: 280px;
-    order: 2; /* sidebar à droite */
+    order: 2;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -250,15 +251,44 @@ details[open] {
 }
 
 /* ==========================================
-   RESPONSIVE
+   VISIBILITÉ DESKTOP / MOBILE
    ========================================== */
 
-/* Tablettes / Vivaldi mobile (viewport large) */
-@media (max-width: 1024px) {
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+/* ==========================================
+   RESPONSIVE MOBILE/TABLETTE
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    /* Police plus grande et lisible */
     body {
+        font-size: 1.05rem;
+        line-height: 1.7;
         padding: 20px;
     }
 
+    h1 { font-size: 2.2rem; }
+    h2, .sidebar-title { font-size: 1.2rem; }
+    h3 { font-size: 1.1rem; }
+
+    /* Affichage mobile */
+    .desktop-only { display: none; }
+    .mobile-only { display: block; }
+
+    /* Sidebar top en haut */
+    .sidebar-top.mobile-only {
+        margin-bottom: 30px;
+    }
+
+    /* Sidebar bottom après expériences */
+    .sidebar-bottom.mobile-only {
+        margin-top: 40px;
+    }
+
+    /* Contenu en colonne */
     .main-container {
         flex-direction: column;
         gap: 40px;
@@ -269,40 +299,8 @@ details[open] {
         min-width: unset;
     }
 
-    .cv-header {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Mobile : sidebar-top en haut, sidebar-bottom en bas */
-@media (max-width: 700px) {
-
-    .cv-header {
-        margin-bottom: 20px;
-    }
-
-    .sidebar-right {
-        order: 2;
-    }
-
-    .content-left {
-        order: 3;
-    }
-
+    /* Résultats en une colonne */
     .results-gallery {
         grid-template-columns: 1fr;
-    }
-
-    /* Sur mobile : on veut visuellement */
-    /* - sidebar-top entre bio et expériences */
-    /* - sidebar-bottom après les expériences */
-
-    .sidebar-top {
-        margin-bottom: 24px;
-    }
-
-    .sidebar-bottom {
-        margin-top: 32px;
     }
 }

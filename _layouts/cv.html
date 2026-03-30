@@ -10,12 +10,23 @@ layout: default
     </div>
 </div>
 
-<div class="main-container">
-    <aside class="sidebar-right">
-        {% include sidebar.html %}
-    </aside>
+<!-- Bloc haut de sidebar (mobile) -->
+<div class="sidebar-top mobile-only">
+  {% include sidebar-top.html %}
+</div>
 
+<div class="main-container">
     <div class="content-left">
         {{ content }}
     </div>
+
+    <aside class="sidebar-right desktop-only">
+        {% include sidebar-top.html %}
+        {% include sidebar-bottom.html %}
+    </aside>
+</div>
+
+<!-- Bloc bas de sidebar (mobile) -->
+<div class="sidebar-bottom mobile-only">
+  {% include sidebar-bottom.html %}
 </div>

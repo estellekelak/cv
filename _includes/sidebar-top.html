@@ -25,23 +25,3 @@
     </div>
   </div>
 </div>
-
-<div class="sidebar-bottom">
-  <div class="sidebar-title">Langues</div>
-  {% for langue in site.data.cv.langues %}
-  <p>
-    <img src="{{ langue.icone | relative_url }}" class="flag-icon" alt="{{ langue.nom }}">
-    <strong>{{ langue.nom }}</strong> : {{ langue.niveau }}
-  </p>
-  {% endfor %}
-
-  <div class="sidebar-title">Outils</div>
-  {% for cat in site.data.cv.categories_outils %}
-  <p class="tool-cat">{{ cat.nom }}</p>
-  <div class="tools-grid">
-    {% for outil in cat.outils %}
-      <img src="{{ outil.icone | relative_url }}" class="tool-icon" title="{{ outil.nom }}">
-    {% endfor %}
-  </div>
-  {% endfor %}
-</div>
